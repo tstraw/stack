@@ -84,6 +84,9 @@ public:
 
   //ENSURES conversion of String to int
   int stringToInt(const String&);
+  
+  //ENSURES conversion of String to int
+  int stringToInt(const String&);
 
   //ENSURES overload of output method
   friend std::ostream& operator<<(std::ostream&, const String&);
