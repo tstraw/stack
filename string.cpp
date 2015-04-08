@@ -411,6 +411,22 @@ String String::operator+(const String& rhs) const{
 }
 
 
+//converts a given string to an int
+int String::stringToInt(const String& myString){
+
+  int i = 0;
+  int result = 0;
+
+  while (myString[i] != 0){
+    result = ((result * 10) + (int(myString[i])) - int('0'));
+    ++i;
+  }
+
+  return result;
+
+}
+
+
 //overload of output operator
 std::ostream& operator<<(std::ostream& out, const String& myString){
 
